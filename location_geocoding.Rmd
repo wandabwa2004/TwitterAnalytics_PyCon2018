@@ -1,0 +1,74 @@
+---
+title: "Exploratory_Analysis_snakebite"
+author: "Ryan Nazareth"
+date: "28 August 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list=ls())
+
+
+library(dplyr, quietly = TRUE, warn.conflicts = FALSE)
+library(ggplot2,quietly = TRUE, warn.conflicts = FALSE)
+library(tidyr, quietly = TRUE, warn.conflicts = FALSE)
+library(reshape2, quietly = TRUE, warn.conflicts = FALSE)
+library(tm, quietly = TRUE, warn.conflicts = FALSE)
+library(ggmap, quietly = TRUE, warn.conflicts = FALSE)
+```
+
+```{r}
+## Importing the twitter snakebite csv file 
+
+snakebite<-read.csv ('snakebite.csv', header = TRUE, stringsAsFactors=FALSE)
+head(snakebite)
+```
+
+
+### Gelocation Map
+
+Creating latitude, longitide from location names using google API
+
+
+```{r}
+
+locatedUsers <- !is.na(snakebite$Location)  # Keep only users with location info
+timezoneusers <- !is.na(snakebite$Time_zone) # Keep only users with timezone info
+locations <- as.character(snakebite$Location[locatedUsers])
+timezones <- as.character(snakebite$Time_zone[timezoneusers])
+
+# 
+# # Use google API to covert location address names to latitude/longitude
+# 
+ for(i in 1976:length(locations))
+{ 
+   # Print("Working...")
+   result <- geocode(locations[i], output = "latlona", source = "google")
+   snakebite$Location_lon[i] <- as.numeric(result[1])
+   snakebite$Location_lat[i] <- as.numeric(result[2])
+  
+}
+
+```
+
+```{r}
+
+# 
+# # Use google API to covert timezone address names to latitude/longitude
+
+for(i in 1976:length(timezones))
+{
+  # Print("Working...")
+  result <- geocode(timezones[i], output = "latlona", source = "google")
+  snakebite$Timezone_lon[i] <- as.numeric(result[1])
+  snakebite$Timezone_lat[i] <- as.numeric(result[2])
+}
+
+write.csv(snakebite, "snakebite.csv", row.names = FALSE)
+
+```
+

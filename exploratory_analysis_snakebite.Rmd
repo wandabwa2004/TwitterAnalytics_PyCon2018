@@ -1,0 +1,188 @@
+---
+title: "Exploratory_Analysis_snakebite"
+author: "Ryan Nazareth"
+date: "28 August 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Loading Libraries
+
+```{r}
+rm(list=ls())
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(reshape2)
+library(wordcloud)
+library(RWeka)
+library(tm)
+require(Rgraphviz) #for plotting in tm package
+require(openNLP) #similar to RWeka, for NLP processing
+library(ggmap)
+
+## Importing the twitter snakebite csv file 
+
+snakebite<-read.csv ('snakebite.csv', fileEncoding="latin1")
+head(snakebite)
+```
+
+
+## Word Cloud one gram 
+
+Apply transformations to the original corpus. In this case, add to the stop words list the "'s" and "'ve" words.Use Weka's n-gram tokenizer to create a TDM that uses as terms the bigrams that appear in the corpus.Extract the frequency of each bigram and analyse the most frequent ones.
+Plot a word cloud and most frequent n-grams in a bar graph
+
+
+```{r}
+myCorpus <- Corpus(VectorSource(snakebite$Text))
+
+keywords <- c("venom", "snake", "snakebite", "antisnake")
+myCorpus = tm_map(myCorpus, tolower)
+myCorpus = tm_map(myCorpus, removePunctuation)
+myCorpus = tm_map(myCorpus, removeNumbers)
+myCorpus = tm_map(myCorpus, removeWords, stopwords("english"))
+myCorpus = tm_map(myCorpus, removeWords, keywords)
+myCorpus <- tm_map(myCorpus, content_transformer(function(x) gsub(x, pattern = "\\<nm\\>", replacement = "n8m")))
+myCorpus <- tm_map(myCorpus, content_transformer(function(x) gsub(x, pattern = "[^[:alnum:][:blank:]?&/\\-]", replacement = "")))
+myCorpus <- tm_map(myCorpus, content_transformer(function(x) gsub(x, pattern = "u00..", replacement = "")))
+#myCorpus <- iconv(myCorpus, "latin1", "ASCII", sub = "")  ## removing non asci charatcers
+
+token_delim <- " \\t\\r\\n.!?,;\"()"
+bitoken <- NGramTokenizer(myCorpus, Weka_control(min=1,max=1, delimiters = token_delim))
+one_word <- data.frame(table(bitoken))
+sort_one <- one_word[order(one_word$Freq,decreasing=TRUE),]
+head(sort_one, 20)
+
+set.seed(4363)
+wordcloud(sort_one$bitoken,sort_one$Freq,random.order=FALSE,min.freq = 18,scale=c(3,.5), colors = brewer.pal(8,"Dark2"))
+
+ggplot(head(sort_one,30), aes(reorder(bitoken,Freq), Freq)) +
+  geom_bar(stat = "identity") + coord_flip() +
+  xlab("one-gram") + ylab("Frequency") +
+  ggtitle("Most frequent single gram")
+
+
+
+```
+
+
+## Word Cloud bi-grams
+
+```{r}
+
+keywords <- c("venom", "snake", "snakebite", "antisnake")
+myCorpus <- Corpus(VectorSource(snakebite$Text))
+myCorpus <- tm_map(myCorpus, tolower)
+myCorpus <- tm_map(myCorpus, removePunctuation)
+myCorpus <- tm_map(myCorpus, removeNumbers)
+myCorpus <- tm_map(myCorpus, removeWords, stopwords("english"))
+myCorpus <- tm_map(myCorpus, removeWords, keywords)
+myCorpus <- tm_map(myCorpus, content_transformer(function(x) gsub(x, pattern = "\\<nm\\>", replacement = "n8m")))
+myCorpus <- tm_map(myCorpus, content_transformer(function(x) gsub(x, pattern = "[^[:alnum:][:blank:]?&/\\-]", replacement = "")))
+myCorpus <- tm_map(myCorpus, content_transformer(function(x) gsub(x, pattern = "u00..", replacement = "")))
+myCorpus <- iconv(myCorpus, from = "UTF-8", to = "ASCII", sub = "")  ## removing non asci charatcers
+
+token_delim <- " \\t\\r\\n.!?,;\"()"
+bitoken <- NGramTokenizer(myCorpus, Weka_control(min=2,max=2, delimiters = token_delim))
+two_word <- data.frame(table(bitoken))
+sort_two <- two_word[order(two_word$Freq,decreasing=TRUE),]
+head(sort_two, 20)
+
+
+color <- c("blue3", "blue4", "darkgoldenrod3", "darkgoldenrod4", 
+            "chocolate1", "chocolate3", "chocolate1",
+            "green4","darkorchid3", "darkorchid4", 
+            "firebrick1", "firebrick2", "firebrick3",
+            "purple3")
+
+set.seed(4363)
+wordcloud(sort_two$bitoken,sort_two$Freq,random.order=FALSE,min.freq = 20, scale=c(1.9,.9), colors = sample(color, 15, replace=TRUE ))
+
+ggplot(head(sort_two,30), aes(reorder(bitoken,Freq), Freq)) +
+  geom_bar(stat = "identity") + coord_flip() +
+  xlab("Bigrams") + ylab("Frequency") +
+  ggtitle("Most frequent bigrams")
+
+
+```
+
+## Trigrams 
+
+
+```{r}
+keywords <- c("venom", "snake", "snakebite", "antisnake")
+myCorpus <- Corpus(VectorSource(snakebite$Text))
+myCorpus <- tm_map(myCorpus, removeNumbers) 
+myCorpus <- tm_map(myCorpus, stripWhitespace) 
+myCorpus = tm_map(myCorpus, tolower)
+myCorpus = tm_map(myCorpus, removePunctuation)
+myCorpus = tm_map(myCorpus, removeWords, stopwords("english"))
+myCorpus = tm_map(myCorpus, removeWords, keywords)
+myCorpus <- tm_map(myCorpus, content_transformer(function(x) gsub(x, pattern = "\\<nm\\>", replacement = "n8m")))
+myCorpus <- tm_map(myCorpus, content_transformer(function(x) gsub(x, pattern = "[^[:alnum:][:blank:]?&/\\-]", replacement = "")))
+myCorpus <- tm_map(myCorpus, content_transformer(function(x) gsub(x, pattern = "u00..", replacement = "")))
+myCorpus <- iconv(myCorpus, from = "UTF-8", to = "ASCII", sub = "")  ## removing non asci charatcers
+
+token_delim <- " \\t\\r\\n.!?,;\"()"
+Trigram <- NGramTokenizer(myCorpus, Weka_control(min=3,max=3, delimiters = token_delim))
+Tab_trigram <- data.frame(table(Trigram))
+TrigramGrp <- Tab_trigram[order(Tab_trigram$Freq,decreasing=TRUE),]
+head(TrigramGrp, 20)
+
+set.seed(4363)
+wordcloud(Tab_trigram$Trigram,Tab_trigram$Freq,random.order=FALSE,min.freq = 16,scale=c(1.3,.5), colors = brewer.pal(8,"Dark2"))
+
+ggplot(head(TrigramGrp,30), aes(reorder(Trigram,Freq), Freq)) +
+  geom_bar(stat = "identity") +  coord_flip() +
+  xlab("Tri-gram") + ylab("Frequency") +
+  ggtitle("Most frequent Tri-gram")
+
+```
+
+
+### Gelocation Map
+
+Plotting the map with tweet user locations 
+
+
+```{r}
+
+worldMap <- map_data("world")  # Easiest way to grab a world map shapefile
+zp1 <- ggplot(worldMap)
+zp1 <- zp1 + geom_path(aes(x = long, y = lat, group = group),  # Draw map
+colour = gray(2/3), lwd = 1/3)
+snakebite$Location_lon = as.numeric(as.character(snakebite$Location_lon))  # converting factors to numerics (note conversion from factors to characters first and then numeric)
+snakebite$Location_lat = as.numeric(as.character(snakebite$Location_lat))# converting factors to numerics (note conversion from factors to characters first and then numeric)
+
+zp1 <- zp1 + geom_point(data = snakebite,  # Add points indicating users
+aes(x = Location_lon, y = Location_lat),colour = "RED", alpha = 0.7, size = 1.5)
+zp1 <- zp1 + coord_equal()  
+zp1 <- zp1 + theme_minimal()  # Drop background annotations
+zp1 <- zp1 + ggtitle("Map of twitter user locations")
+zp1 <- zp1 + scale_x_discrete( limits = c( -160 , 160 ) )+ scale_y_discrete( limits = c( -50 , 65 ))
+
+print(zp1)
+worldMap <- map_data("world")  # Easiest way to grab a world map shapefile
+zp1 <- ggplot(worldMap)
+# Draw map
+zp1 <- zp1 + geom_path(aes(x = long, y = lat, group = group), colour = gray(2/3), lwd = 1/3)
+
+snakebite$Timezone_lon = as.numeric(as.character(snakebite$Timezone_lon))  # converting factors to numerics (note conversion from factors to characters first and then numeric)
+snakebite$Timezone_lat = as.numeric(as.character(snakebite$Timezone_lat))# converting factors to numerics (note conversion from factors to characters first and then numeric)
+
+zp1 <- zp1 + geom_point(data = snakebite,  # Add points indicating users
+aes(x = Timezone_lon, y = Timezone_lat),colour = "RED", alpha = 0.7, size = 1.5)
+zp1 <- zp1 + coord_equal()  
+zp1 <- zp1 + theme_minimal()  # Drop background annotations
+zp1 <- zp1 + ggtitle("Map of twitter user timezones")
+zp1 <- zp1 + scale_x_discrete( limits = c( -160 , 160 ) )+ scale_y_discrete( limits = c( -50 , 65 ))
+print(zp1)
+
+
+
+```
+
