@@ -19,6 +19,27 @@ $(document).ready(function()
 	console.log(map_width)
 	console.log(map_height)
 
+$("#lda").css('display','none');
+$("#LDA-description").css('display','none');
+d3.select("#bar-freqs").selectAll("path").style("fill", "none").style("stroke", "none");
+
+$(".button2").click(function () {
+				  $(".leftcolumn").css('display','none');
+					$(".rightcolumn").css('display','none');
+
+					$("#lda").show()
+					$("#LDA-description").show();
+});
+
+
+$(".button1").click(function () {
+					$(".leftcolumn").show();
+					$(".rightcolumn").show();
+					$("#lda").css('display','none');
+					$("#LDA-description").css('display','none');
+});
+
+
 // Set tooltips
 var tip = d3.tip()
             .attr('class', 'd3-tip')
@@ -279,12 +300,12 @@ var g_map =  svg_map.append('g').attr('class', 'map');
 
 								/// Adding in the title of the graph
 									bar_g.append("text")
-												 .attr("x", "50%")
+												 .attr("x", "49%")
 												 .attr("y",bar_height/1.5)
 												 .attr("text-anchor", "middle")
 												 .transition()
 												 .duration(1000)
-												 .style("font-size", "25px")
+												 .style("font-size", "20px")
 												 .style("font-weight", "bold")
 												 .text("Tweets with the most " + select);
 

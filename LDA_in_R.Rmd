@@ -19,6 +19,7 @@ library("wordcloud")
 library("RColorBrewer")
 library(SnowballC)
 library(mallet)
+library(servr)
 
 ```
 
@@ -119,7 +120,7 @@ Plotting the visualisation using the LDAvis package
 
 ```{r}
 
-serVis(topicmodels2LDAvis(ldaOut, 5))
+serVis(topicmodels2LDAvis(ldaOut, 5), out.dir = 'vis', open.browser = FALSE)
 ```
 
 
