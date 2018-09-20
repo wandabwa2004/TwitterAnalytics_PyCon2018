@@ -10,5 +10,5 @@ Social media platforms like Twitter have been a popular choice amongst researche
 
 The visualisation can be accessed <a href = https://ryankarlos.github.io/SnakebiteViz/> here </a>
 <p>
-<img src="https://github.com/ryankarlos/TwitterAnalytics_PyCon2018/blob/master/Interactive_Visualisation/snapshot_snakebiteviz_home.png" height = 400px width = 800px>
+<img src="https://github.com/ryankarlos/TwitterAnalytics_PyCon2018/blob/master/Interactive_Visualisation/snapshot_snakebiteviz_home.png" height = 600px width = 900px>
 </p>
