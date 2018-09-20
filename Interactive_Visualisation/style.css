@@ -32,9 +32,8 @@ body{
 
 .leftcoloptions {
   margin-left: 20px;
-  margin-top:40px;
-  overflow: hidden;
-  width:60%;
+  margin-top:30px;
+  width:95%;
   display:inline-block;
 }
 
@@ -42,6 +41,7 @@ body{
  float:right;
  width: 10%;
  height: 15%;
+ padding-right: 100px;
 }
 
 
@@ -134,12 +134,13 @@ body{
 }
 
 #legend{
-		width: 40%;
+		width: 35%;
 		height: 10%;
+    color: white !important;
         }
 
 #legend-title{
-			width: 5%;
+			width: 50%;
 			height: 4%;
 	        }
 
@@ -289,8 +290,9 @@ div.tooltip {
 }
 
 #slider {
-  height: 10px;
-  width: 35%;
+  height: 20px;
+  width: 45%;
+  background-color: pink;
 }
 
 .ui-slider .ui-slider-handle {
@@ -302,7 +304,6 @@ div.tooltip {
 .legend {
       padding: 10px;
       font: 10px sans-serif;
-      background: yellow;
       box-shadow: 2px 2px 1px #888;
   }
 
@@ -325,7 +326,7 @@ div.tooltip {
   color:white;
   margin-right: 15px;
   padding: 0 12px;
-  width:12%;
+  width:13%;
   cursor:pointer;
   height:25px;
   font-size: 13px;
@@ -344,7 +345,7 @@ div.tooltip {
       color: white;
       padding: 0 12px;
 			margin-right: 15px;
-      width: 12%;
+      width: 14%;
       cursor: pointer;
       height:25px;
       font-size: 13px;
@@ -362,7 +363,7 @@ div.tooltip {
       border: none;
       color: white;
       padding: 0 12px;
-      width:12%;
+      width:14%;
       cursor: pointer;
       height:25px;
       font-size: 13px;
@@ -380,7 +381,7 @@ border:none;
 color:white;
 margin-right: 15px;
 padding: 0 12px;
-width:12%;
+width:14%;
 cursor:pointer;
 height:25px;
 font-size: 13px;

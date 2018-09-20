@@ -418,8 +418,6 @@ var g_map =  svg_map.append('g').attr('class', 'map');
 					console.log(RetweetData)
 
 
-
-
       // this changes the bar chart based on the drop down selector : retweets or favourites
 
 						d3.select("#select-bar").on("change", function(){
@@ -498,12 +496,10 @@ var g_map =  svg_map.append('g').attr('class', 'map');
 
 
 
-
 						   /// Add colour legend /////
 
 						  var fav_number;
 						  fav_number = [d3.min(favourites),Math.round(d3.min(favourites) + (d3.max(favourites) -d3.min(favourites))/4), Math.round(d3.max(favourites) - (d3.max(favourites) -d3.min(favourites))/4), d3.max(favourites)];
-
 
 						  svg_legend.selectAll("text").remove();  // removing previous bound DOMS in svg
 
@@ -511,7 +507,7 @@ var g_map =  svg_map.append('g').attr('class', 'map');
 									.data(fav_number.reverse())
 									.enter()
 									.append("text")
-									.attr("x", legend_width - legend_width/1.5)
+									.attr("x", legend_width - legend_width/1.2)
 									.attr("y", function(d,i){
 														return (1.2*i/(fav_number.length))*100 + 3 +'%';
 										  })
