@@ -9,5 +9,6 @@ Social media platforms like Twitter have been a popular choice amongst researche
 ## D3 Visualisation Dashboard
 
 The visualisation can be accessed <a href = https://ryankarlos.github.io/SnakebiteViz/> here </a>
-
-<img> snapshot_snakebiteviz_home.png </img>
+<p>
+<img src="snapshot_snakebiteviz_home.png" height = 100px>
+</p>
