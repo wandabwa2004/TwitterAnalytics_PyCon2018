@@ -14,7 +14,8 @@ The visualisation can be accessed <a href = https://ryankarlos.github.io/Snakebi
 <p>
 <img src="https://github.com/ryankarlos/TwitterAnalytics_PyCon2018/blob/master/Interactive_Visualisation/snapshot_snakebiteviz_home.png" height = 500px width = 1000px>
 </p>
-<div></div>
+<br>
+<br>
 <p>
 <img src="https://github.com/ryankarlos/TwitterAnalytics_PyCon2018/blob/master/Interactive_Visualisation/snapshot_snakebiteviz_LDA.png" height = 500px width = 1000px>
 </p>
