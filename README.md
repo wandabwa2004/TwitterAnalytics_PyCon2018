@@ -10,4 +10,4 @@ Social media platforms like Twitter have been a popular choice amongst researche
 
 The visualisation can be accessed <a href = https://ryankarlos.github.io/SnakebiteViz/> here </a>
 
-<img> </img>
+<img> snapshot_snakebiteviz_home.png </img>
