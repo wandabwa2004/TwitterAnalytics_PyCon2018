@@ -2,96 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="452b9335-2443-4c51-b731-4af1b0ee5add" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exploration/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local runner/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/preprocessing/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_exploration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_preprocessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.RData" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.Rhistory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/LDA in R-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Models-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Sentiment-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Snakebite-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Snakebite_textpreprocessing-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Visuals in R-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/API.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/CHANGES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/d3-tip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/d3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/d3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/datamaps.world.hires.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/lda.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/ldavis.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/snakebite.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/snapshot_snakebiteviz_LDA.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/snapshot_snakebiteviz_home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/tweets_time.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interactive_Visualisation/world-topo-min.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LDAGibbs 10 topic_probabilities.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LDA_in_R.Rmd" beforeDir="false" afterPath="$PROJECT_DIR$/exploration/LDA.Rmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sentiment_Analysis.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sentiment_Analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter_notebooks/Sentiment_Analysis.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tableau_charts.twb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/CHANGELOG.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/MANIFEST.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/README.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/TwitterSearch.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/TwitterSearch.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/TwitterSearch.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/TwitterSearch.egg-info/not-zip-safe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/TwitterSearch.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/TwitterSearch.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/TwitterSearch/TwitterOrder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/TwitterSearch/TwitterSearch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/TwitterSearch/TwitterSearchException.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/TwitterSearch/TwitterSearchOrder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/TwitterSearch/TwitterUserOrder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/TwitterSearch/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/TwitterSearch/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/build/lib/TwitterSearch/TwitterOrder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/build/lib/TwitterSearch/TwitterSearch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/build/lib/TwitterSearch/TwitterSearchException.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/build/lib/TwitterSearch/TwitterSearchOrder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/build/lib/TwitterSearch/TwitterUserOrder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/build/lib/TwitterSearch/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/build/lib/TwitterSearch/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/dist/TwitterSearch-1.0.1-py3.5.egg" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/setup.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterSearch-1.0.1/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exploratory_analysis_snakebite.Rmd" beforeDir="false" afterPath="$PROJECT_DIR$/exploration/exploratory_analysis_snakebite.Rmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lda_model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lda_model.expElogbeta.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lda_model.id2word" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lda_model.state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/location_geocoding.Rmd" beforeDir="false" afterPath="$PROJECT_DIR$/exploration/location_geocoding.Rmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snakebite.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/snakebite.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsne_plot.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter_texttprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing/twitter_texttprocessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vis/d3.v3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vis/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vis/lda.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vis/lda.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vis/ldavis.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word2vec2k.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/word2vec2k.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/word2vec_tsne_LDA.py" beforeDir="false" afterPath="$PROJECT_DIR$/exploration/word2vec_tsne_LDA.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -117,11 +30,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="370">
               <caret line="85" column="14" lean-forward="true" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -149,6 +71,7 @@
         <option value="$PROJECT_DIR$/config.ini" />
         <option value="$PROJECT_DIR$/preprocessing/twitter_texttprocessing.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -162,7 +85,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="-24" />
+    <option name="y" value="186" />
     <option name="width" value="1440" />
     <option name="height" value="716" />
   </component>
@@ -256,7 +180,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="716" extended-state="0" />
+    <frame x="-24" y="186" width="1440" height="716" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.10497238" />
@@ -340,13 +264,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.Rhistory" />
-    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exploration/word2vec_tsne_LDA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -371,10 +288,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
           <caret line="85" column="14" lean-forward="true" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
         </state>
       </provider>
     </entry>
