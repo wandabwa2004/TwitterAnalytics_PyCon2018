@@ -15,10 +15,10 @@ The visualisation can be accessed <a href = https://ryankarlos.github.io/Snakebi
 <br>
 <br>
 <p>
-<img src="https://github.com/ryankarlos/TwitterAnalytics_PyCon2018/d3_vis_ui/snapshot_snakebiteviz_home.png" height = 500px width = 1000px>
+<img src="https://github.com/ryankarlos/TwitterAnalytics_PyCon2018/blob/master/d3_vis_ui/snapshot_snakebiteviz_home.png" height = 500px width = 1000px>
 </p>
 <br>
 <br>
 <p>
-<img src="https://github.com/ryankarlos/TwitterAnalytics_PyCon2018/d3_vis_ui/snapshot_snakebiteviz_LDA.png" height = 500px width = 1000px>
+<img src="https://github.com/ryankarlos/TwitterAnalytics_PyCon2018/blob/master/d3_vis_ui/snapshot_snakebiteviz_LDA.png" height = 500px width = 1000px>
 </p>
