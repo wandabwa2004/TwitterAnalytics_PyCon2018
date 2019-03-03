@@ -1,5 +1,5 @@
 import pandas as pd
-from exploration.word2vec_tsne_LDA import word_count, word2vec_model, \
+from exploration.word2vec_and_LDA import word_count, word2vec_model, \
     bag_of_words_corpus, gensim_dict, tfidf_corpus, tsne_model_fit, \
     plotly_tsne, plot_tsne, lda_model
 
