@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="452b9335-2443-4c51-b731-4af1b0ee5add" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/local runner/sentiment_analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelling/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelling/feature_engineering.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modelling/model_build.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exploration/word2vec_tsne_LDA.py" beforeDir="false" afterPath="$PROJECT_DIR$/exploration/word2vec_and_LDA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jupyter_notebooks/Sentiment_Analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter_notebooks/Sentiment_Analysis.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local runner/exploring_tweets.py" beforeDir="false" afterPath="$PROJECT_DIR$/local runner/exploring_tweets.py" afterDir="false" />
-    </list>
+    <list default="true" id="452b9335-2443-4c51-b731-4af1b0ee5add" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +17,8 @@
       <file leaf-file-name="twitter_texttprocessing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/preprocessing/twitter_texttprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -42,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/modelling/feature_engineering.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="780">
-              <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+              <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
               <folding>
                 <element signature="e#1#20#0" expanded="true" />
               </folding>
@@ -53,8 +41,7 @@
       <file leaf-file-name="model_build.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modelling/model_build.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="-689">
               <folding>
                 <element signature="e#1#20#0" expanded="true" />
               </folding>
@@ -65,8 +52,8 @@
       <file leaf-file-name="sentiment_analysis.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/local runner/sentiment_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#2#21#0" expanded="true" />
               </folding>
@@ -77,7 +64,7 @@
       <file leaf-file-name="config.ini" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="1875">
               <caret line="125" selection-start-line="125" selection-end-line="127" selection-end-column="15" />
             </state>
           </provider>
@@ -87,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/exploration/word2vec_and_LDA.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2325">
-              <caret line="155" column="9" lean-forward="true" selection-start-line="155" selection-start-column="9" selection-end-line="155" selection-end-column="9" />
+              <caret line="155" column="9" selection-start-line="155" selection-start-column="9" selection-end-line="155" selection-end-column="9" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -108,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -175,21 +162,6 @@
             <path>
               <item name="Codebase" type="b2602c69:ProjectViewProjectNode" />
               <item name="Codebase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Codebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Codebase" type="462c0819:PsiDirectoryNode" />
-              <item name="exploration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Codebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Codebase" type="462c0819:PsiDirectoryNode" />
-              <item name="local runner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Codebase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Codebase" type="462c0819:PsiDirectoryNode" />
-              <item name="modelling" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -269,7 +241,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="35" width="1440" height="814" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.10497238" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.5267035" />
@@ -277,10 +248,11 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3296501" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.28730822" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3296501" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" visible="true" weight="0.26778242" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" weight="0.26778242" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.52580196" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -291,7 +263,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.10313076" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
@@ -426,33 +397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preprocessing/twitter_texttprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="125" selection-start-line="125" selection-end-line="127" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exploration/word2vec_and_LDA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2325">
-          <caret line="155" column="9" lean-forward="true" selection-start-line="155" selection-start-column="9" selection-end-line="155" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -463,14 +407,41 @@
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1875">
+          <caret line="125" selection-start-line="125" selection-end-line="127" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exploration/word2vec_and_LDA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2325">
+          <caret line="155" column="9" selection-start-line="155" selection-start-column="9" selection-end-line="155" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/twitter_texttprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modelling/feature_engineering.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
-          <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
           <folding>
             <element signature="e#1#20#0" expanded="true" />
           </folding>
@@ -479,8 +450,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modelling/model_build.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="-689">
           <folding>
             <element signature="e#1#20#0" expanded="true" />
           </folding>
@@ -489,8 +459,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/local runner/sentiment_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#2#21#0" expanded="true" />
           </folding>
